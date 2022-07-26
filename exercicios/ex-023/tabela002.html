@@ -22,44 +22,61 @@
          }
 
          thead, tfoot {
-            background-color: gray;
+            background-color: black;
             color: white;
          }
          
          .num {
             text-align: right;
          }
+
+         caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: gray;
+         }
+         tbody>tr:nth-child(2n) {
+            background-color: lightgray;
+         }
+
+         thead, tr, th {
+            position: sticky;
+            top: -1px;
+         }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
-        <thead>
-            <tr>
-                <th>Estado</th>
-                <th>População</th>
-            </tr>  
-        </thead>
-        <tbody>
-            <tr>
-                <td>São Paulo</td>
-                <td class="num">45 919 049</td>
-            </tr>
-            <tr>
-                <td>Minas Gerais</td>
-                <td class="num">21 168 791</td> 
-            </tr>
-            <tr>
-                <td>Rio de Janeiro</td>
-                <td class="num">17 264 943</td>
-            </tr>
-        </tbody>
-        <tfoot>
-            <tr>
-                <th>Total de Habitantes</th>
-                <td class="num"><strong>0000000</strong></td>
-            </tr>
-        </tfoot>
+        <caption>População das Unidades Federativas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Estado</th>
+                    <th scope="col" style="width: 50px;">População</th>
+                </tr>  
+            </thead>
+            <tbody>
+                <tr>
+                    <td>São Paulo</td>
+                    <td class="num">45 919 049</td>
+                </tr>
+                <tr>
+                    <td>Minas Gerais</td>
+                    <td class="num">21 168 791</td> 
+                </tr>
+                <tr>
+                    <td>Rio de Janeiro</td>
+                    <td class="num">17 264 943</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th scope="row">Total de Habitantes</th>
+                    <td class="num"><strong>0000000</strong></td>
+                </tr>
+            </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet neque rem quae, facere magni ipsa! Hic recusandae nesciunt fugit officiis voluptate impedit deserunt soluta quibusdam porro, provident quo inventore esse? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsum mollitia odit, minima in esse alias unde, voluptatum adipisci corrupti consequuntur, nesciunt veniam voluptatibus. Harum non vitae libero sint illum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, aperiam necessitatibus velit deserunt et possimus molestiae dolores. Maiores optio excepturi non, laboriosam dolores culpa rem vero beatae voluptatem, dolorum dolor. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora recusandae facere illo laborum numquam perspiciatis possimus voluptas voluptatum praesentium? Ad et debitis saepe ex nihil voluptate dolor fugiat nemo. Officia! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem molestias porro iure officiis qui accusamus dolorum, nemo pariatur? Error sint ut ratione illo et sequi nihil at expedita nostrum nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae quae impedit adipisci a. Nam consequatur, esse asperiores harum reprehenderit quae, officia beatae dolore architecto quasi earum adipisci ea excepturi voluptatem? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam vitae eaque harum vero neque assumenda fugit dolores enim excepturi qui saepe nobis voluptas, temporibus, suscipit totam iusto a magnam! Possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dolorum rem ut obcaecati, numquam labore facilis repellat non magnam sapiente incidunt atque suscipit similique. Ex cupiditate laboriosam repellendus dolorum repudiandae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex quibusdam commodi, id fugiat hic molestiae. Recusandae praesentium vel laudantium animi eveniet est, odio, aliquam cum, amet consequuntur architecto atque maiores. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, similique aperiam est quos quae nemo provident repudiandae pariatur voluptatibus, veniam nesciunt qui officiis quasi? Inventore blanditiis quos aliquam totam numquam? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores vel eius sequi a itaque at odio voluptate, suscipit voluptatem dolores vero est soluta ipsum cumque earum nobis expedita rerum sit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam cupiditate at odit reiciendis quis eos, blanditiis, dolorem corrupti doloremque animi fugiat. Non commodi natus quaerat excepturi tempora dolor ut animi. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, et tenetur fugiat cum voluptatum expedita quasi ut rerum cumque deserunt quaerat sint cupiditate ex earum aperiam harum est modi dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem velit repellendus qui eaque mollitia praesentium ex saepe quos ad officiis, placeat tempora minima ullam ea eos delectus non doloremque eum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint pariatur, nisi nemo distinctio velit suscipit magnam dolorem impedit excepturi odit quo cupiditate quasi illo adipisci dolorum itaque ratione iste veritatis!</p>
 </body>
 </html>
